@@ -15,7 +15,7 @@ This repository is for Cloud Computing lab submissions.
 
 | Week | Lab | Status |
 | --- | --- | --- |
-| Week 01 | Ubuntu VM setup using Oracle VirtualBox | Prerequisites checked; VM pending |
+| Week 01 | Ubuntu VM setup using Oracle VirtualBox | VM created; Ubuntu installation pending |
 
 ## Repository Structure
 
