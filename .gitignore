@@ -1,0 +1,23 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Large VM and installer files
+*.iso
+*.vdi
+*.vmdk
+*.vbox
+*.ova
+*.ovf
+*.exe
+*.msi
+
+# Temporary files
+*.tmp
+*.log
+~$*
