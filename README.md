@@ -1,4 +1,4 @@
-# Cloud Computing Lab
+# Lab Assignments
 
 This repository holds my Cloud Computing lab submissions for the semester. Each week has its own folder with the report (Markdown + PDF) and screenshots.
 
@@ -20,7 +20,7 @@ This repository holds my Cloud Computing lab submissions for the semester. Each 
 ## Repository Structure
 
 ```text
-cloud-computing-lab/
+Lab-Assignments/
 ├── Week-01/
 │   ├── Lab-1-Assignment.pdf        # assignment handout
 │   ├── Lab-1-Report.pdf            # submitted report

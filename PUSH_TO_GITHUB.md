@@ -8,7 +8,7 @@ Run these commands from this folder:
 
 ```powershell
 gh auth login
-gh repo create cloud-computing-lab --public --source . --remote origin --push
+gh repo create Lab-Assignments --public --source . --remote origin --push
 ```
 
 After pushing, copy the repository URL and update:
@@ -21,7 +21,7 @@ After pushing, copy the repository URL and update:
 If you create the GitHub repository in the browser first, run:
 
 ```powershell
-git remote add origin https://github.com/YOUR_USERNAME/cloud-computing-lab.git
+git remote add origin https://github.com/YOUR_USERNAME/Lab-Assignments.git
 git push -u origin main
 ```
 
