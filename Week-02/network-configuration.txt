@@ -1,0 +1,76 @@
+### NAT Network
+NAT Networks:
+
+Name:         CloudLabNAT
+Enabled:      Yes
+Network:      192.168.50.0/24
+Gateway:      192.168.50.1
+DHCP Server:  Yes
+IPv6:         No
+IPv6 Prefix:  fd17:625c:f037:2::/64
+IPv6 Default: No
+loopback mappings (ipv4)
+        127.0.0.1=2
+
+1 network found
+
+### DHCP server
+IP Address:  192.168.50.3
+MAC Address: 08:00:27:e0:a5:4f
+State:       expired
+Issued:      2026-09-19T16:47:46Z (1789836466)
+Expire:      2026-09-19T16:57:46Z (1789837066)
+TTL:         600 sec, currently 0 sec left
+IP Address:  192.168.50.4
+MAC Address: 08:00:27:27:6a:d1
+State:       acked
+Issued:      2026-09-19T16:56:22Z (1789836982)
+Expire:      2026-09-19T17:06:22Z (1789837582)
+TTL:         600 sec, currently 450 sec left
+
+### Ubuntu-Cloud-Lab
+name="Ubuntu-Cloud-Lab"
+memory=4096
+cpus=2
+nat-network1="CloudLabNAT"
+macaddress1="080027E0A54F"
+cableconnected1="on"
+nic1="natnetwork"
+nictype1="82540EM"
+
+### Ubuntu-Cloud-Lab-2
+name="Ubuntu-Cloud-Lab-2"
+memory=4096
+cpus=2
+nat-network1="CloudLabNAT"
+macaddress1="080027276AD1"
+cableconnected1="on"
+nic1="natnetwork"
+nictype1="82540EM"
+
+### DHCP server configuration (CloudLabNAT)
+NetworkName:    CloudLabNAT
+Dhcpd IP:       192.168.50.2
+LowerIPAddress: 192.168.50.4
+UpperIPAddress: 192.168.50.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+        3/legacy: 192.168.50.1
+        6/legacy: 192.168.50.3
+       15/legacy: adamas.loc
+Groups:               None
+Individual Config:    VM NIC: 8f5e024e-9837-4148-8927-e3163adc2451 slot 0, MAC 08:00:27:e0:a5:4f
+    Fixed Address:    192.168.50.5
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+    DHCP options:     None
