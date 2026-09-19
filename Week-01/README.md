@@ -1,40 +1,34 @@
-# Week 01 - Ubuntu VM Setup
+# Week 01 — Installation of Hypervisors and Initiation of VMs with Image File
 
-## Objective
+**Status:** Completed on 19 September 2026.
 
-Create an Ubuntu virtual machine using Oracle VirtualBox and document the process for Cloud Computing Lab 1.
+- Assignment: [Lab-1-Assignment.pdf](Lab-1-Assignment.pdf)
+- Report (PDF): [Lab-1-Report.pdf](Lab-1-Report.pdf)
+- Report (Markdown source): [Lab-1-VM-Setup-Report.md](Lab-1-VM-Setup-Report.md)
+- VM configuration dump: [vm-configuration.txt](vm-configuration.txt)
 
-## Required Files
+## Summary
 
-- Oracle VirtualBox installer
-- Ubuntu Desktop ISO image for Intel/AMD 64-bit architecture
-- Lab 1 assignment PDF from the course email
-
-## Recommended VM Configuration
-
-| Setting | Recommended Value |
+| Item | Value |
 | --- | --- |
-| VM name | Ubuntu-Cloud-Lab |
-| Type | Linux |
-| Version | Ubuntu (64-bit) |
-| RAM | 4096 MB or more |
-| CPU | 2 cores or more |
-| Virtual disk | 25 GB or more |
-| Disk type | VDI, dynamically allocated |
+| Hypervisor | Oracle VirtualBox 7.2.18 |
+| Guest image | Ubuntu 26.04.1 LTS Desktop (amd64) ISO |
+| VM | `Ubuntu-Cloud-Lab` — 4 vCPU, 6144 MB RAM, 25 GB VDI (dynamic), NAT network |
+| Guest kernel | 7.0.0-31-generic |
+| Build tools | `build-essential` 12.12ubuntu2.26.04.2, gcc 15.2.0, GNU Make 4.4.1 |
+| Kernel headers | `linux-headers-7.0.0-31-generic` |
 
-## Screenshot Checklist
+## Screenshots
 
-Place screenshots in `Week-01/screenshots/`.
-
-| Screenshot | File Name |
+| # | Screenshot |
 | --- | --- |
-| VirtualBox installed/opened | `01-virtualbox-open.png` |
-| VM configuration summary | `02-vm-settings.png` |
-| Ubuntu ISO selected | `03-iso-selected.png` |
-| Ubuntu installer running | `04-ubuntu-installer.png` |
-| Ubuntu desktop after installation | `05-ubuntu-desktop.png` |
-| Terminal showing `lsb_release -a` | `06-ubuntu-version.png` |
-
-## Submission Notes
-
-After completing the VM setup, export the final report as PDF if required by the Lab 1 instructions and upload it to this repository.
+| 1 | [VirtualBox Manager](screenshots/01-virtualbox-manager.png) |
+| 2 | [VM configuration with install media attached](screenshots/02-vm-configuration.png) |
+| 3 | [Booting from Ubuntu ISO](screenshots/03-live-iso-boot.png) |
+| 4 | [Ubuntu installer](screenshots/04-ubuntu-installing.png) |
+| 5 | [Login screen](screenshots/05-ubuntu-login.png) |
+| 6 | [Ubuntu desktop](screenshots/06-ubuntu-desktop.png) |
+| 7 | [VM verification](screenshots/07-vm-verification.png) |
+| 8 | [apt update + build-essential + linux-headers](screenshots/08-apt-update-and-install.png) |
+| 9 | [Build tools verified](screenshots/09-build-tools-verified.png) |
+| 10 | [VM running after install](screenshots/10-vm-running-after-install.png) |
