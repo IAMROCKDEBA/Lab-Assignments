@@ -10,6 +10,7 @@ This repository holds my Cloud Computing lab submissions for the semester. Each 
 | Roll Number | TODO: Add your roll number |
 | Section | BTECH_CSE_SECB_2023 |
 | University | Adamas University |
+| GitHub Repository | https://github.com/IAMROCKDEBA/Lab-Assignments |
 
 ## Lab Index
 
