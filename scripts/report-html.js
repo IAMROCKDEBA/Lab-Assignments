@@ -25,6 +25,7 @@ code { font-family: Consolas, monospace; font-size: 9pt; background: #f2f2f2; pa
 pre { background: #f5f5f5; border: 1px solid #ddd; padding: 6pt; white-space: pre-wrap; word-break: break-all; page-break-inside: avoid; }
 pre code { background: none; padding: 0; }
 figure { margin: 10pt 0; page-break-inside: avoid; text-align: center; }
+img { max-width: 100%; }
 figure img { max-width: 100%; max-height: 110mm; border: 1px solid #aaa; }
 figcaption { font-size: 9.5pt; font-style: italic; margin-top: 3pt; }
 a { color: #0b4f9c; }

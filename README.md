@@ -18,6 +18,7 @@ This repository holds my Cloud Computing lab submissions for the semester. Each 
 | --- | --- | --- | --- |
 | Week 01 | Installation of Hypervisors and initiation of VMs with image file (Oracle VirtualBox + Ubuntu 26.04.1 LTS) | [PDF](Week-01/Lab-1-Report.pdf) · [Markdown](Week-01/Lab-1-VM-Setup-Report.md) | Completed |
 | Week 02 | Connecting two VMs using a VirtualBox NAT Network (ping between VMs) | [PDF](Week-02/Lab-2-Report.pdf) · [Markdown](Week-02/Lab-2-NAT-Network-Report.md) | Completed |
+| Week 03 | Network emulation with Mininet (single,3 and tree,3 topologies) | [PDF](Week-03/Lab-3-Report.pdf) · [Markdown](Week-03/Lab-3-Mininet-Report.md) | Completed |
 
 ## Repository Structure
 
@@ -35,6 +36,14 @@ Lab-Assignments/
 │   ├── Lab-2-Report.pdf            # submitted report
 │   ├── Lab-2-NAT-Network-Report.md # report source
 │   ├── network-configuration.txt   # NAT Network + VM NIC settings
+│   ├── README.md
+│   └── screenshots/
+├── Week-03/
+│   ├── Lab-3-Assignment.docx       # assignment handout
+│   ├── Lab-3-Report.pdf            # submitted report
+│   ├── Lab-3-Mininet-Report.md     # report source
+│   ├── topology-single-3.png       # topology diagrams
+│   ├── topology-tree-3.png
 │   ├── README.md
 │   └── screenshots/
 ├── scripts/
