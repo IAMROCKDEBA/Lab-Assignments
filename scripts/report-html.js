@@ -4,7 +4,7 @@ const [, , bodyPath, outPath] = process.argv;
 let body = fs.readFileSync(bodyPath, 'utf8');
 
 // Turn the screenshot table into full-width captioned figures for print.
-body = body.replace(/(<h2[^>]*>7\. Screenshots<\/h2>)\s*<table>[\s\S]*?<tbody>([\s\S]*?)<\/tbody>\s*<\/table>/, (m, h, rows) => {
+body = body.replace(/(<h2[^>]*>\d+\. Screenshots<\/h2>)\s*<table>[\s\S]*?<tbody>([\s\S]*?)<\/tbody>\s*<\/table>/, (m, h, rows) => {
   const figs = [...rows.matchAll(/<tr>\s*<td>(\d+)<\/td>\s*<td>([\s\S]*?)<\/td>\s*<td><img src="([^"]+)"[^>]*><\/td>\s*<\/tr>/g)]
     .map(([, n, cap, src]) => `<figure><img src="${src}"><figcaption>Figure ${n}: ${cap}</figcaption></figure>`);
   return h + figs.join('\n');
