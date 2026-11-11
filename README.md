@@ -20,7 +20,7 @@ This repository holds my Cloud Computing lab submissions for the semester. Each 
 | Week 02 | Connecting two VMs using a VirtualBox NAT Network (ping between VMs) | [PDF](Week-02/Lab-2-Report.pdf) · [Markdown](Week-02/Lab-2-NAT-Network-Report.md) | Completed |
 | Week 03 | Network emulation with Mininet (single,3 and tree,3 topologies) | [PDF](Week-03/Lab-3-Report.pdf) · [Markdown](Week-03/Lab-3-Mininet-Report.md) | Completed |
 | Week 04 | Linear topology with five switches in Mininet (links, connectivity, link-failure study) | [PDF](Week-04/Lab-4-Report.pdf) · [Markdown](Week-04/Lab-4-Linear-Topology-Report.md) | Completed |
-| Week 05 | Cloud scheduling mechanisms with the CloudSim Plus simulator (Java 17 + Maven, VM and cloudlet space-/time-shared schedulers) | [PDF](Week-05/Lab-5-Report.pdf) · [Markdown](Week-05/Lab-5-Cloud-Scheduling-Report.md) | Completed |
+| Week 05 | Cloud scheduling mechanisms with the CloudSim Plus simulator (Java 25 + Maven, VM and cloudlet space-/time-shared schedulers) | [PDF](Week-05/Lab-5-Report.pdf) · [Markdown](Week-05/Lab-5-Cloud-Scheduling-Report.md) | Completed |
 
 ## Repository Structure
 

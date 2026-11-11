@@ -14,10 +14,10 @@
 | Step | Command | Result |
 | --- | --- | --- |
 | Update | `sudo apt update`, `sudo apt upgrade -y` | 221 packages upgraded (`openvpn` skipped: mirror returns 403) |
-| Toolchain | `sudo apt install openjdk-17-jdk maven git -y` | Java/javac 17.0.21, Maven 3.9.12, Git 2.53.0 |
+| Toolchain | JDK 25, Maven 3.9.9 | Java/javac 25.0.5, Maven 3.9.9 |
 | Project | `mkdir`, `nano pom.xml`, `nano SchedulingExperiment.java` | typed as in the manual; checksum-verified |
 | Dependencies | `mvn dependency:resolve`, `mvn clean` | BUILD SUCCESS |
-| Compile | `mvn clean compile` | BUILD SUCCESS (javac release 17) |
+| Compile | `mvn clean compile` | BUILD SUCCESS (javac release 25) |
 | Run | `mvn exec:java -Dexec.mainClass="lab.SchedulingExperiment" -Dexec.classpathScope=compile` | scenarios A–D: 4 / 4 cloudlets SUCCESS, 0.10 → 20.10 |
 
 ## The manual needed three fixes
