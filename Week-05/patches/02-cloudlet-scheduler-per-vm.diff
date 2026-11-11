@@ -1,0 +1,52 @@
+--- a/SchedulingExperiment.java
++++ b/SchedulingExperiment.java
+@@ -2,6 +2,7 @@
+ 
+ import java.util.ArrayList;
+ import java.util.List;
++import java.util.function.Supplier;
+ 
+ import org.cloudbus.cloudsim.core.CloudSim;
+ import org.cloudbus.cloudsim.datacenters.Datacenter;
+@@ -37,21 +38,21 @@
+     public static void main(String[] args) {
+         runScenario("A: VM SpaceShared + Cloudlet SpaceShared",
+                 new VmSchedulerSpaceShared(),
+-                new CloudletSchedulerSpaceShared());
++                CloudletSchedulerSpaceShared::new);
+         runScenario("B: VM SpaceShared + Cloudlet TimeShared",
+                 new VmSchedulerSpaceShared(),
+-                new CloudletSchedulerTimeShared());
++                CloudletSchedulerTimeShared::new);
+         runScenario("C: VM TimeShared + Cloudlet SpaceShared",
+                 new VmSchedulerTimeShared(),
+-                new CloudletSchedulerSpaceShared());
++                CloudletSchedulerSpaceShared::new);
+         runScenario("D: VM TimeShared + Cloudlet TimeShared",
+                 new VmSchedulerTimeShared(),
+-                new CloudletSchedulerTimeShared());
++                CloudletSchedulerTimeShared::new);
+     }
+ 
+     private static void runScenario(String title,
+                                     VmScheduler vmScheduler,
+-                                    CloudletScheduler cloudletScheduler) {
++                                    Supplier<CloudletScheduler> cloudletScheduler) {
+         System.out.println("\n==================================================");
+         System.out.println(title);
+         System.out.println("==================================================");
+@@ -97,12 +98,12 @@
+                 new VmAllocationPolicySimple());
+     }
+ 
+-    private static List<Vm> createVms(CloudletScheduler scheduler) {
++    private static List<Vm> createVms(Supplier<CloudletScheduler> scheduler) {
+         List<Vm> vmList = new ArrayList<>();
+         for (int i = 0; i < VM_COUNT; i++) {
+             Vm vm = new VmSimple(i, MIPS, 2);
+             vm.setRam(2048).setBw(10000).setSize(10000);
+-            vm.setCloudletScheduler(scheduler);
++            vm.setCloudletScheduler(scheduler.get());
+             vmList.add(vm);
+         }
+         return vmList;

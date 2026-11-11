@@ -1,0 +1,11 @@
+--- a/pom.xml
++++ b/pom.xml
+@@ -14,7 +14,7 @@
+         <dependency>
+             <groupId>org.cloudsimplus</groupId>
+             <artifactId>cloudsimplus</artifactId>
+-            <version>8.5.5</version>
++            <version>7.3.0</version>
+         </dependency>
+     </dependencies>
+ </project>

@@ -1,0 +1,19 @@
+--- a/SchedulingExperiment.java
++++ b/SchedulingExperiment.java
+@@ -23,6 +23,7 @@
+ import org.cloudbus.cloudsim.schedulers.vm.VmSchedulerTimeShared;
+ import org.cloudbus.cloudsim.utilizationmodels.UtilizationModel;
+ import org.cloudbus.cloudsim.utilizationmodels.UtilizationModelFull;
++import org.cloudbus.cloudsim.utilizationmodels.UtilizationModelDynamic;
+ import org.cloudbus.cloudsim.vms.Vm;
+ import org.cloudbus.cloudsim.vms.VmSimple;
+ import org.cloudbus.cloudsim.provisioners.ResourceProvisionerSimple;
+@@ -116,6 +117,8 @@
+             Cloudlet cloudlet = new CloudletSimple(
+                     CLOUDLET_LENGTH, 1, utilization);
+             cloudlet.setSizes(300);
++            cloudlet.setUtilizationModelRam(new UtilizationModelDynamic(0.25));
++            cloudlet.setUtilizationModelBw(new UtilizationModelDynamic(0.25));
+             cloudletList.add(cloudlet);
+         }
+         return cloudletList;

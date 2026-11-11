@@ -10,7 +10,11 @@ body = body.replace(/(<h2[^>]*>\d+\. Screenshots<\/h2>)\s*<table>[\s\S]*?<tbody>
   return h + figs.join('\n');
 });
 
-const html = `<!doctype html><html><head><meta charset="utf-8"><title>Cloud Computing Lab 1 Report</title>
+// Use the report's own first heading as the document title (falls back to a generic one).
+const h1 = body.match(/<h1[^>]*>([\s\S]*?)<\/h1>/);
+const title = h1 ? h1[1].replace(/<[^>]+>/g, '').trim() : 'Cloud Computing Lab Report';
+
+const html = `<!doctype html><html><head><meta charset="utf-8"><title>${title}</title>
 <style>
 @page { size: A4; margin: 18mm 16mm; }
 body { font-family: "Segoe UI", Calibri, Arial, sans-serif; font-size: 10.5pt; line-height: 1.45; color: #111; }
