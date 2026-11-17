@@ -1,0 +1,6 @@
+cloud computing provides scalable resources
+cloud computing uses distributed systems
+hadoop processes large datasets
+hadoop provides distributed storage
+mapreduce processes data in parallel
+mapreduce is used for large scale data processing
