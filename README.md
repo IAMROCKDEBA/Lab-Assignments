@@ -22,6 +22,7 @@ This repository holds my Cloud Computing lab submissions for the semester. Each 
 | Week 04 | Linear topology with five switches in Mininet (links, connectivity, link-failure study) | [PDF](Week-04/Lab-4-Report.pdf) · [Markdown](Week-04/Lab-4-Linear-Topology-Report.md) | Completed |
 | Week 05 | Cloud scheduling mechanisms with the CloudSim Plus simulator (Java 25 + Maven, VM and cloudlet space-/time-shared schedulers) | [PDF](Week-05/Lab-5-Report.pdf) · [Markdown](Week-05/Lab-5-Cloud-Scheduling-Report.md) | Completed |
 | Week 06 | Cloud services with AWS (S3, IAM, EC2, VPC, CloudWatch, CloudShell/CLI) and Ubuntu on VirtualBox | [PDF](Week-06/Lab-6-Report.pdf) · [Markdown](Week-06/Lab-6-AWS-Cloud-Services-Report.md) | Completed |
+| Week 07 | Collaborative applications (SaaS) with Google Docs, Sheets, Slides and Meet | [PDF](Week-07/Lab-7-Report.pdf) · [Markdown](Week-07/Lab-7-SaaS-Collaboration-Report.md) | Completed |
 
 ## Repository Structure
 
@@ -71,6 +72,12 @@ Lab-Assignments/
 │   ├── Lab-6-AWS-Cloud-Services-Report.md
 │   ├── README.md
 │   └── screenshots/                # AWS account details are blacked out
+├── Week-07/
+│   ├── Lab-7-Assignment.pdf        # assignment handout
+│   ├── Lab-7-Report.pdf            # submitted report
+│   ├── Lab-7-SaaS-Collaboration-Report.md
+│   ├── README.md
+│   └── screenshots/                # Google account details are blacked out
 ├── scripts/
 │   ├── build-report-pdf.ps1        # regenerate a week's PDF from its Markdown
 │   └── report-html.js
